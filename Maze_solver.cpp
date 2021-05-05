@@ -14,7 +14,7 @@ using namespace std;
 HWND myconsole = GetConsoleWindow();
 HDC mydc = GetDC(myconsole);
 
-vector<vector<int>> maze; // Structure d�finissant le labyrinthe
+vector<vector<int>> maze; // Structure définissant le labyrinthe
 
 int maze_size = 101; // Taille du labyrinthe
 
@@ -23,8 +23,8 @@ int zoom = 7; // Taille des cases en pixel
 int screen_x = maze_size * zoom;
 int screen_y = maze_size * zoom;
 
-int gap_x = 200; // D�calage en X
-int gap_y = 100; // D�calage en Y
+int gap_x = 200; // Décalage en X
+int gap_y = 100; // Décalage en Y
 int variable;
 
 
@@ -244,7 +244,7 @@ COLORREF color(int value, const int &max_value)
 
 
 
-// R�sout le labyrinthe
+// Résout le labyrinthe
 
 void maze_solver()
 {
